@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: auto;
+    width: 100vw;
+    /* background-color: aquamarine; */
+}
+
+/* Header */
+header .navbar {
+    overflow: hidden;
+    background-color: #333;
+    height: 100%;
+    /* background: transparent; */
+}
+
+/* Style the logo */
+/* .navbar .logo {
+    float: left;
+    display: block;
+    padding: 10px 20px; 
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+} */
+
+/* Style the navbar links */
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+/* On hover, change the background color of the links */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Main Page */
+main{
+    width: 100vw;
+    height: 92vh;
+    background-color: #f7dd8d;
+    overflow-x: hidden;
+}
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    position: absolute;
+}
+
+/* img {
+    width: 98%;
+    height: auto;
+    display: block;
+    opacity: 0.8;
+} */
+
+.overlay {
+    position: relative;
+    /* top: 0px; */
+    left: 25vw;
+    /* width: 100%; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: black;
+    /* background: rgba(255, 255, 255, 0.7); Adds a semi-transparent white background */
+}
+
+h1, p, form {
+    text-align: center;
+    /* Background color for text and form */
+    /* background: white; */
+    padding: 20px;
+    margin: 10px;
+    color: ghostwhite;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #f1e8e8; /* Text color */
+    font-size: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    border: none;
+    /* display: none; */
+}
+
+#seachMealBtn{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 22px;
+    background-color: #f7dd8d;
+    border: none;
+
+}
+
+
+/* Resulting Meals List Style */
+
+.meal-container{
+    display: flex;
+    flex-direction: row;
+}
+.meal-title{
+    color: red;
+    font-size: 2rem;
+}
+
+.meal-image{
+    width: auto;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create a responsive design For Header by adding a media query */
+@media (max-width: 600px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar .logo {
+        float: none;
+        text-align: left;
+        width: 100%;
+    }
+}
